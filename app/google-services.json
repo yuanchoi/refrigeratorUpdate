@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "963382171642",
+    "project_id": "refrigeratorupdate",
+    "storage_bucket": "refrigeratorupdate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963382171642:android:8998b7c7c5e4dd5c47b643",
+        "android_client_info": {
+          "package_name": "com.gradproject.RefrigeratorUpdate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "963382171642-1f0775sv46t0ijgpd7csupdjin409adj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gradproject.RefrigeratorUpdate",
+            "certificate_hash": "61da9a8b7c53f24d5a3882685807179384b444bf"
+          }
+        },
+        {
+          "client_id": "963382171642-83tbvctcerk872r1ak0a0b0lehkrfoft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Q1Yz_1_SokIZUC-3o-WFB3wFQVgKPuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "963382171642-83tbvctcerk872r1ak0a0b0lehkrfoft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
