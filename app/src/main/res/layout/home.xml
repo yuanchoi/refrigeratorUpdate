@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gradproject.RefrigeratorUpdate.Home"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="#005500"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/green"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="537dp"
+        android:layout_weight="1"
+        android:background="#e5f9dd"
+        android:orientation="horizontal">
+
+        <fragment
+            android:name="com.gradproject.RefrigeratorUpdate.Fridge"
+            android:id="@+id/fragment_place"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_fridge">
+        </fragment>
+
+
+        <LinearLayout
+            android:id="@+id/linearview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="9dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/recyclerView">
+
+            <EditText
+                android:id="@+id/search_area"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:text="     식재료 검색" />
+
+            <ImageButton
+                android:id="@+id/search_btn"
+                android:layout_width="52dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#005500"
+                android:scaleType="fitXY"
+                android:src="@drawable/search" />
+
+            <ImageButton
+                android:id="@+id/camera_btn"
+                android:layout_width="52dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#005500"
+                android:scaleType="fitXY"
+                android:src="@drawable/camera" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="#e5f9dd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:id="@+id/button1"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_marginRight="3dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@drawable/fridge"
+                android:layout_width="wrap_content"
+                android:background="#005500"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/button2"
+            android:gravity="center"
+            android:layout_marginRight="3dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:background="#005500"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@drawable/recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="3dp"
+            android:id="@+id/button3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="#005500"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@drawable/mart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/button4"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="#005500"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:src="@drawable/shopping_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

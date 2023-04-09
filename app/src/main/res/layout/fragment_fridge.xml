@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.gradproject.RefrigeratorUpdate.Home"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="537dp"
+        android:layout_weight="1"
+        android:background="#e5f9dd"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="9dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/recyclerView">
+
+            <EditText
+                android:id="@+id/search_area"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:text="     식재료 검색" />
+
+            <ImageButton
+                android:id="@+id/search_btn"
+                android:layout_width="52dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#005500"
+                android:scaleType="fitXY"
+                android:src="@drawable/search" />
+
+            <ImageButton
+                android:id="@+id/camera_btn"
+                android:layout_width="52dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:background="#005500"
+                android:scaleType="fitXY"
+                android:src="@drawable/camera" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:padding="10dp" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
